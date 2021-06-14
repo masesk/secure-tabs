@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h4>Secure Tabs v0.1</h4>
+    <img id="logo" src="img/logo.png"/>
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-requests-tab" aria-selected="true">Requests</button>
+        <button class="nav-link" id="nav-settings-tab" >Settings</button>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-requests" >
+        <ul id="main-list" class="list-group list-group">
+      </ul>
+      </div>
+      <div class="tab-pane fade" id="nav-settings">
+          
+        <div class="set-width">
+          <p class="inline">Enable Secure Tabs</p>
+          <div class="secure-tabs-toggle inline">
+              <input type="checkbox" name="secure-tabs-status" class="secure-tabs-toggle-checkbox" id="secure-tabs-status-toggle"
+                  tabindex="1">
+              <label class="secure-tabs-toggle-label" for="secure-tabs-status-toggle">
+                  <span class="secure-tabs-toggle-inner"></span>
+                  <span class="secure-tabs-toggle-switch"></span>
+              </label>
+          </div>
+      </div>
+      <div class="set-width">
+        <p class="inline">Enable Page Lock</p>
+        <div class="secure-tabs-toggle inline">
+            <input type="checkbox" name="secure-tabs-lock" class="secure-tabs-toggle-checkbox" id="secure-tabs-lock-toggle"
+                tabindex="2">
+            <label class="secure-tabs-toggle-label" for="secure-tabs-lock-toggle">
+                <span class="secure-tabs-toggle-inner"></span>
+                <span class="secure-tabs-toggle-switch"></span>
+            </label>
+        </div>
+    </div>
+
+      </div>
+    </div>
+</body>
+
+</html>
