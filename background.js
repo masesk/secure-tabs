@@ -74,7 +74,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     case "allow-tab":
       const saved_tab = tab_actions[message.tabId][message.index];
       chrome.tabs.query({}, function (foundTabs) {
-        allowed_tab = foundTabs.length - 1;
+        allowed_tab = foundTabs.length;
         chrome.tabs.create(
           {
             active: saved_tab.active,
@@ -138,4 +138,10 @@ getStatus(function (toggle) {
       function () {}
     );
   }
+});
+
+
+chrome.runtime.getPlatformInfo(function(info) {
+  // Display host OS in the console
+  console.log(info.os);
 });
