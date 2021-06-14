@@ -36,4 +36,3 @@ Chrome extension that restricts pages from spawning new windows / tabs as well a
 
 1. **Lock feature**: prevent page from leaving the current page (no redirects)
 2. **Exception/Trusted feature**: add pages to exception list to automatically allow new tabs without confirmation.  
->>>>>>> master
